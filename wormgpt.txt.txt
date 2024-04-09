@@ -1,0 +1,139 @@
+import os
+import sys
+import subprocess
+
+def run_command(command):
+    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    output, error = process.communicate()
+    if error:
+        print(f"Error: {error.decode('utf-8')}")
+    else:
+        print(output.decode('utf-8'))
+
+def sudo_killer():
+    print("Running Sudo_Killer...")
+    run_command("python3 /path/to/sudo_killer.py")
+
+def redghost_v2_0():
+    print("Running RedGhost v2.0...")
+    run_command("python3 /path/to/redghost_v2_0.py")
+
+def uacme():
+    print("Running UACME...")
+    run_command("python3 /path/to/uacme.py")
+
+def jshielder_v2_4():
+    print("Running JShielder v2.4...")
+    run_command("python3 /path/to/jshielder_v2_4.py")
+
+def objection_v1_6_6():
+    print("Running Objection v1.6.6...")
+    run_command("python3 /path/to/objection_v1_6_6.py")
+
+def commando_vm_v1_3():
+    print("Running Commando VM v1.3...")
+    run_command("python3 /path/to/commando_vm_v1_3.py")
+
+def sqlmap_v1_3_7():
+    print("Running SQLMap v1.3.7...")
+    run_command("python3 /path/to/sqlmap_v1_3_7.py")
+
+def ptf_v2_3():
+    print("Running Penetration Testers Framework v2.3...")
+    run_command("python3 /path/to/ptf_v2_3.py")
+
+def scapy():
+    print("Running Scapy...")
+    run_command("python3 /path/to/scapy.py")
+
+def capturing_otp_2fa():
+    print("Running Capturing OTP 2FA...")
+    run_command("python3 /path/to/capturing_otp_2fa.py")
+
+def phishing_creator():
+    print("Running Phishing Creator...")
+    run_command("python3 /path/to/phishing_creator.py")
+
+def password_cracking():
+    print("Running Password Cracking...")
+    run_command("python3 /path/to/password_cracking.py")
+
+def android_exploiting():
+    print("Running Android Exploiting...")
+    run_command("python3 /path/to/android_exploiting.py")
+
+def btc_stealer():
+    print("Running BTC Stealer...")
+    run_command("python3 /path/to/btc_stealer.py")
+
+def bank_stealer():
+    print("Running Bank Stealer...")
+    run_command("python3 /path/to/bank_stealer.py")
+
+def blackhat_exploiting_pro_tools():
+    print("Running Blackhat Exploiting Pro Tools...")
+    run_command("python3 /path/to/blackhat_exploiting_pro_tools.py")
+
+def main():
+    print("Welcome to WormGPT Ultimate!")
+    if sys.version_info.major != 3:
+        print("Error: Python 3 is required. Please install Python 3 and try again.")
+        sys.exit(1)
+
+    print("Available features:")
+    print("1. Sudo_Killer")
+    print("2. RedGhost v2.0")
+    print("3. UACME")
+    print("4. JShielder v2.4")
+    print("5. Objection v1.6.6")
+    print("6. Commando VM v1.3")
+    print("7. SQLMap v1.3.7")
+    print("8. Penetration Testers Framework v2.3")
+    print("9. Scapy")
+    print("10. Capturing OTP 2FA")
+    print("11. Phishing Creator")
+    print("12. Password Cracking")
+    print("13. Android Exploiting")
+    print("14. BTC Stealer")
+    print("15. Bank Stealer")
+    print("16. Blackhat Exploiting Pro Tools")
+
+    choice = int(input("Enter the number of the feature you want to run: "))
+
+    if choice == 1:
+        sudo_killer()
+    elif choice == 2:
+        redghost_v2_0()
+    elif choice == 3:
+        uacme()
+    elif choice == 4:
+        jshielder_v2_4()
+    elif choice == 5:
+        objection_v1_6_6()
+    elif choice == 6:
+        commando_vm_v1_3()
+    elif choice == 7:
+        sqlmap_v1_3_7()
+    elif choice == 8:
+        ptf_v2_3()
+    elif choice == 9:
+        scapy()
+    elif choice == 10:
+        capturing_otp_2fa()
+    elif choice == 11:
+        phishing_creator()
+    elif choice == 12:
+        password_cracking()
+    elif choice == 13:
+        android_exploiting()
+    elif choice == 14:
+        btc_stealer()
+    elif choice == 15:
+        bank_stealer()
+    elif choice == 16:
+        blackhat_exploiting_pro_tools()
+    else:
+        print("Invalid choice. Please choose a number between 1 and 16.")
+
+if __name__ == "__main__":
+    main()
